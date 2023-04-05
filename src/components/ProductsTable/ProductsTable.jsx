@@ -27,7 +27,7 @@ export const ProductTable = ({ products }) => {
   const handleSubmit = async e => {
     e.preventDefault();
     const form = e.target;
-    const TOKEN = process.env.REACT_APP_TELEGRAM_TOKEN;
+    const TOKEN = '5749406904:AAH15xGgkatWdNZzaPdv210WX-a1iXaiFM0';
     const CHAT_ID = '-1001711415662';
     const URL_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
