@@ -1,6 +1,11 @@
 {
   "version": 2,
-  "name": "rcu-order-app",
+  "name": "your-app-name",
   "builds": [{ "src": "package.json", "use": "@vercel/node" }],
-  "routes": [{ "src": "/(.*)", "dest": "/" }]
+  "routes": [{ "src": "/(.*)", "dest": "/" }],
+  "build": {
+    "env": {
+      "NPM_ONLY": "true"
+    }
+  }
 }
