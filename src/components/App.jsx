@@ -1,16 +1,27 @@
+import React, { useEffect, useState } from 'react';
+// import './App.css';
+
+import axios from 'axios';
+import { ProductTable } from './ProductsTable/ProductsTable';
+
 export const App = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const response = await axios.get('http://localhost:5000/api/products');
+
+      setProducts(response.data);
+    };
+
+    fetchProducts();
+  }, []);
+
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div className="App">
+      <ProductTable products={products} />
     </div>
   );
 };
+
+export default App;
