@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/rcu-order-app/static/css/main.e5a7d43b.css",
-    "main.js": "/rcu-order-app/static/js/main.6df3d0b3.js",
+    "main.js": "/rcu-order-app/static/js/main.f87e37fc.js",
     "index.html": "/rcu-order-app/index.html",
     "main.e5a7d43b.css.map": "/rcu-order-app/static/css/main.e5a7d43b.css.map",
-    "main.6df3d0b3.js.map": "/rcu-order-app/static/js/main.6df3d0b3.js.map"
+    "main.f87e37fc.js.map": "/rcu-order-app/static/js/main.f87e37fc.js.map"
   },
   "entrypoints": [
     "static/css/main.e5a7d43b.css",
-    "static/js/main.6df3d0b3.js"
+    "static/js/main.f87e37fc.js"
   ]
 }
